@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:orientation="vertical"
+            tools:context=".MainActivity">
+
+            <TextView
+
+                android:gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:padding="14sp"
+                android:textColor="#616161"
+                android:fontFamily="sans-serif-medium"
+                android:text="Team A" />
+
+            <TextView
+                android:textSize="56sp"
+                android:textColor=" #000000"
+                android:fontFamily="sans-serif-light"
+                android:gravity="center_horizontal"
+                android:id="@+id/team_a_score"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:padding="4dp"
+                android:text="0" />
+
+            <Button
+                android:layout_marginTop="8dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
+                android:layout_width="match_parent"
+                android:onClick="Plus3A"
+                android:text="+3 Points" />
+
+            <Button
+                android:layout_marginTop="8dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
+                android:layout_width="match_parent"
+                android:onClick="Plus2A"
+                android:text="+2 Points" />
+
+            <Button
+                android:layout_marginTop="8dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
+                android:layout_width="match_parent"
+                android:onClick="FreeA"
+                android:text="Free Throw" />
+
+        </LinearLayout>
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="@android:color/darker_gray"/>
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:orientation="vertical"
+            tools:context=".MainActivity">
+
+            <TextView
+
+                android:gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:padding="14sp"
+                android:textColor="#616161"
+                android:fontFamily="sans-serif-medium"
+                android:text="Team B" />
+
+            <TextView
+                android:textSize="56sp"
+                android:textColor=" #000000"
+                android:fontFamily="sans-serif-light"
+                android:gravity="center_horizontal"
+                android:id="@+id/team_b_score"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:padding="4dp"
+                android:text="0" />
+
+            <Button
+                android:layout_marginTop="8dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
+                android:layout_width="match_parent"
+                android:onClick="Plus3B"
+                android:text="+3 Points" />
+
+            <Button
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:onClick="Plus2B"
+                android:text="+2 Points" />
+
+            <Button
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:onClick="FreeB"
+                android:text="Free Throw" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reset"
+        android:layout_marginBottom="32dp"
+        android:onClick="Zero"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>
